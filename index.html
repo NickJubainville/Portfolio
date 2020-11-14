@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nick Jubainville's Portfolio</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -34,27 +35,9 @@
     <table id="intro">
         <tr>
             <td id="intro-table" class="animated slideInLeft" style="animation-delay:2s;">
-                <div class="flex-center-column logo-container">
-                    <img class="logo" src="img/logo.png" alt="njubainville logo">
-                    <svg class="line-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 1019 23.3" xml:space="preserve">
-                    <g>
-                        <g>
-                            <g>
-                                <path class="st0" d="M995.8,23.3H23.2C10.4,23.3,0,18.1,0,11.6S10.4,0,23.2,0h972.7c12.8,0,23.2,5.2,23.2,11.6
-                                    C1019,18.1,1008.6,23.3,995.8,23.3z"/>
-                            </g>
-                        </g>
-                        <line class="st1" x1="0" y1="-54" x2="0" y2="-18"/>
-                        <line class="st1" x1="-54" y1="0" x2="-18" y2="0"/>
-                        <line class="st1" x1="-54" y1="23.3" x2="-18" y2="23.3"/>
-                        <line class="st1" x1="0" y1="77.3" x2="0" y2="41.3"/>
-                        <line class="st1" x1="1019" y1="-54" x2="1019" y2="-18"/>
-                        <line class="st1" x1="1073" y1="0" x2="1037" y2="0"/>
-                        <line class="st1" x1="1073" y1="23.3" x2="1037" y2="23.3"/>
-                        <line class="st1" x1="1019" y1="77.3" x2="1019" y2="41.3"/>
-                    </g>
-                    </svg>
+                <div class="logo-container">
+                    <img class="logo" src="img/logo.png" alt="njubainville logo">                    
+                    <hr class="divide-primary"/>
                 </div>
                 <h1>Software Developer</h1>                
                 <table>
@@ -68,28 +51,31 @@
         </tr>
     </table>
     <div id="portfolio">
-        <h1>portfolio</h1>
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547922657-b370d1687eb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549375463-8cbc18ca3f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549309019-a1d77aeae74f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547149666-769b42053e67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547950515-e652d0f50b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80">
+        <div class="section-title">
+            <h1>portfolio</h1>
+            <img class="line" src="img/line.svg">
         </div>
+    <!-- <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547922657-b370d1687eb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80">
+        </div> -->
     </div>
     <div id="about">
-        <h1>about</h1>
+        <div class="section-title">
+            <h1>about</h1>
+            <img class="line" src="img/line.svg">
+        </div>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Growing up, I always had a passion for technology; an outlier in a small town. The only opportunity available to me there to pursue this passion was through retail of electronics. During my time there, I'd like to say I learned quite a bit. Not just about the plethora of hardware, but also about people. Being that we were the only shop of our kind in the town, people with all sorts of problems came to us, regardless of whether it was something we'd dealt with previously or not. And to me, that was the best part of the job. It allowed me to step outside of the shell of a salesperson and apply some actual problem solving. Even though retail wasn't for me, I'd like to think I have that job to thank for allowing me to uncover my love of problem solving. Coupling that with my passion for technology; what better pursuit than software development?
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            These days I'm wrapping up my diploma program at NAIT for Digital Media & IT. Even after two years and all the languages, frameworks, and approaches I've taken, I know I've just barely scratched the surface. Originally I was worried by this thought, with the feeling of inadequacy bubbling up to the surface — more commonly termed imposter syndrome. But I've since learned that I was looking at things the wrong way. What could honestly be more exciting than knowing that you still have so much more you can learn? I look forward to all the possibilities the future holds!
         </p>
     </div>
     <div id="contact">
-        <h1>contact</h1>
+        <div class="section-title">
+            <h1>contact</h1>
+            <img class="line" src="img/line.svg">
+        </div>
         <form>
             <input type="text" placeholder="name" required>
             <input type="email" placeholder="email" required><br>

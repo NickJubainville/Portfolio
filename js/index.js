@@ -1,4 +1,4 @@
-var width = $(window).width(); 
+var width = window.innerWidth; 
 window.onscroll = function(){
 if ((width >= 1000)){
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {

@@ -96,7 +96,7 @@ header table {
     text-decoration:none;
     padding:5px 10px;
     border-bottom:2px solid transparent;
-    margin-left:4vw;
+    margin:0 4vw;
     transition:0.4s ease-in-out;
 }
 #navigation a:hover{
@@ -115,6 +115,23 @@ header table {
 .logo {
     width: 80%;
     margin-bottom: 20px;
+}
+hr.divide-primary {
+    padding: 0;
+    border: none;
+    border-top: solid 5px #000;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+hr.divide-primary::after {
+    background-color: #313131;
+    color: #1aa493;
+    content: "</>";
+    position: relative;
+    top: -.8em;
+    font-size: 2em;
+    padding: 0 .25em;
 }
 #intro-table {
     margin-right: auto;
@@ -170,7 +187,7 @@ header table {
 .btn_one:hover {
     box-shadow:0px 10px 30px #313131;
     cursor:pointer;
-    color:#1aa493;
+    color:#000;
     background:#313131;
 }
 #portfolio {
@@ -180,11 +197,21 @@ header table {
     background-color: #1aa493;
 }
 #portfolio h1 {
-    padding:5px 0px;
-    border-bottom:4px solid #000;
-    width:8%;
+    padding:5px 0px;    
 }
-#portfolio h1, #about > *, #contact > *, .footer-links {
+.section-title {
+    width: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.line {
+    margin-top: -80px;
+}
+.line:nth-of-type(even){
+    color: #1aa493;
+}
+#about > *, #contact > *, .footer-links {
     margin-left: auto;
     margin-right: auto;
 }
@@ -210,17 +237,17 @@ header table {
     padding:6vh 4vw;
     font-weight:bold;
 }
-#about > * {
+#about p {
     width: 50%;
 }
 #about h1 {
     padding:5px 0px;
-    border-bottom:4px solid #1aa493;
-    width:8%;
     color: #1aa493;
 }
 #about p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #1aa493;
 }
 #contact {
     width:100vw;
@@ -229,8 +256,6 @@ header table {
 }
 #contact h1 {
     padding:5px 0px;
-    border-bottom:4px solid #000;
-    width:10%;
 }
 #contact table {
     width:100%;
@@ -324,9 +349,12 @@ button:focus {
 }
 
 @media (max-width: 1000px){
+    h1 {
+        font-size: 32px;
+    }
     #photos {
-    columns:1;
-    column-gap:0%;
+        columns:1;
+        column-gap:0%;
     }
     #photos img {
         margin:2% 0px;
@@ -334,6 +362,23 @@ button:focus {
     #photos img:hover {
         transform: scale(1);
         cursor: pointer;
+    }
+    hr.divide-primary {
+        padding: 0;
+        border: none;
+        border-top: solid 3px #000;
+        text-align: center;
+        max-width: 250px;
+        margin: 25px auto 30px;
+    }
+    hr.divide-primary::after {
+        background-color: #313131;
+        color: #1aa493;
+        content: "</>";
+        position: relative;
+        top: -.8em;
+        font-size: 1em;
+        padding: 0 .25em;
     }
     #intro {
         border:0px;
@@ -351,10 +396,13 @@ button:focus {
     }
     #intro-table table {
         width:100%;
-        margin-top:6vh;
+        margin:6vh 0;
     }
     #intro-table table tr td {
         text-align:center;
+    }
+    .logo-container {
+        margin-top: 40px;
     }
     .btn_one {
     padding:6px 30px;
@@ -367,7 +415,7 @@ button:focus {
         box-shadow:0px 10px 40px #313131;
         cursor:pointer;
         background-color: #313131;
-        color: #1aa493;
+        color: #000;
     }
     #contact table tr td {
         width:100%;
@@ -383,17 +431,21 @@ button:focus {
         width:90%;
     }
     #portfolio h1 {
-        width:19%;
+        width:16%;
     }
     #about h1 {
-        width:25%;
+        width:12%;
+    }
+    #about p {
+        font-size: 16px;
+        text-align: center;
     }
     #contact h1 {
-        width:33%;
+        width:16%;
     }
     header {
         width:100vw;
-        background:#fff;
+        background: transparent;
         padding:4vh 2vw;
         position:absolute;
     }
