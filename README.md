@@ -1,2 +1,2 @@
 # Portfolio
-Web portfolio for Nick Jubainville
+Web Portfolio Repository for http://www.njubainville.ca/
