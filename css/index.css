@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -8,6 +9,11 @@ body {
     overflow-x:hidden;
     scroll-behavior: smooth;  
     background-color: #313131;  
+    color: #000;
+}
+h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
 }
 #loading {
     width: 100vw;
@@ -34,7 +40,7 @@ body {
     100% {transform: rotate(360deg);}
 }
 header {
-    width:92vw;
+    width:100vw;
     padding:6vh 4vw;
     position:fixed;
     font-weight:bold;
@@ -96,41 +102,44 @@ header table {
 #navigation a:hover{
     border-bottom:2px solid #1aa493;
 }
-#top_part {
+#intro {
     width:100%;    
 }
-#top_part tr td{
+#intro tr td{
     width:50%;
 }
 .logo-container {
-    width: 20%;
+    width: 30%;
+    margin: 0 auto 20px;
 }
 .logo {
     width: 80%;
+    margin-bottom: 20px;
 }
-#about {
-    width:84% !important;
+#intro-table {
+    margin-right: auto;
+    margin-left: auto;
     height:95vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    text-align:left;
+    text-align:center;
     padding:0px 8%;
 }
-#about h1 {
+#intro-table h1 {
     font-size:45px;
     word-wrap:break-word;
 }
-#about table {
-    width:70%;
+#intro-table table {
+    width:100%;
     margin-top:4vh;
 }
-#about table tr td {
-    width:20% !important;
-    text-align:left;
+#intro-table table tr td {
+    width:33% !important;
+    text-align:center;
 }
 .social {
-    color:rgb(255, 44, 90);
+    color:#1aa493;
     font-size:23px;
     padding:12px 17px;
     border-radius:50%;
@@ -141,16 +150,16 @@ header table {
 }
 .social:hover { 
     cursor: pointer;
-    color:#fff;
-    background:rgb(255, 44, 90);
-    box-shadow:0px 10px 30px rgba(255, 66, 107,0.8);
+    color:#000;
+    background:#1aa493;
+    box-shadow:0px 10px 30px #1aa493;
 }
 .btn_one {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
-    color:rgb(255, 44, 90);
-    background:#fff;
-    border:3px solid rgb(255, 44, 90);
+    color:#000;
+    background:#1aa493;
+    border:3px solid #000;
     padding:8px 40px;
     width:35%;
     border-radius:80px;
@@ -159,27 +168,25 @@ header table {
     transition:0.4s ease-in-out;
 }
 .btn_one:hover {
-    box-shadow:0px 10px 30px rgba(255, 44, 90, 0.8);
+    box-shadow:0px 10px 30px #313131;
     cursor:pointer;
-    color:#fff;
-    background:rgb(255, 44, 90);
+    color:#1aa493;
+    background:#313131;
 }
-#rightImage {
-    width:100%;
-    height:95vh;
-    background:linear-gradient(0deg,rgba(255, 44, 90, 0.8),rgba(2255, 44, 90, 0.8)),url("https://images.unsplash.com/photo-1506057527569-6a0285b2fcc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=60") center center;
-    background-size:cover;
-    background-repeat:no-repeat;
-}
-#work {
-    width:92vw;
+#portfolio {
+    width:100vw;
     padding:6vh 4vw;
     font-weight:bold;
+    background-color: #1aa493;
 }
-#work h1 {
+#portfolio h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
-    width:6%;
+    border-bottom:4px solid #000;
+    width:8%;
+}
+#portfolio h1, #about > *, #contact > *, .footer-links {
+    margin-left: auto;
+    margin-right: auto;
 }
 #photos {
     width:100%;
@@ -198,23 +205,31 @@ header table {
     transform: scale(1.1);
     cursor: pointer;
 }
-#bio {
-    width:92vw;
+#about {
+    width:100vw;
     padding:6vh 4vw;
     font-weight:bold;
 }
-#bio h1 {
+#about > * {
+    width: 50%;
+}
+#about h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
+    border-bottom:4px solid #1aa493;
     width:8%;
+    color: #1aa493;
+}
+#about p {
+    font-family: 'Open Sans', sans-serif;
 }
 #contact {
-    width:92vw;
+    width:100vw;
     padding:6vh 4vw;
+    background-color: #1aa493;
 }
 #contact h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
+    border-bottom:4px solid #000;
     width:10%;
 }
 #contact table {
@@ -233,14 +248,15 @@ header table {
     padding:10px 20px !important;
 }
 #contact form {
-    width:100%;
+    width:50%;
+    text-align: center;
 }
 #contact form input {
     width:96%;
     margin:20px 1%;
     background:transparent;
     border:0px;
-    border-bottom:3px solid rgba(255, 44, 90,0.5);
+    border-bottom:3px solid rgba(0, 0, 0, 0.5);
     padding:8px 10px;
     font-family: 'Poppins', sans-serif;
     font-size:18px;
@@ -253,7 +269,7 @@ header table {
     margin:20px 1%;
     padding:8px 10px;
     border:0px;
-    border-bottom:3px solid rgba(255, 44, 90,0.5);
+    border-bottom:3px solid rgba(0, 0, 0, 0.5);
     padding:8px 10px;
     font-family: 'Poppins', sans-serif;
     font-size:18px;
@@ -265,11 +281,11 @@ header table {
 }
 #contact form input:focus {
     outline:none;
-    border-bottom:3px solid rgba(255, 44, 90,1);
+    border-bottom:3px solid rgba(0, 0, 0, 1);
 }
 #contact form textarea:focus {
     outline:none;
-    border-bottom:3px solid rgba(255, 44, 90,1);
+    border-bottom:3px solid rgba(0, 0, 0, 1);
 }
 #address {
     position:relative;
@@ -278,13 +294,14 @@ header table {
 }
 #footer {
     width:100%;
-    padding:10vh 0px;
+    padding:3vh 0px;
     text-align:center;
     font-weight:bold;
+    background-color: #000;
+    color: #1aa493;
 }
-#footer a {
-    color:rgb(255, 44, 90);
-    text-decoration:none;
+.footer-links {
+    margin-bottom: 15px;
 }
 ::placeholder {
     color:#000;
@@ -318,41 +335,39 @@ button:focus {
         transform: scale(1);
         cursor: pointer;
     }
-    #rightImage {
-        display:none;
-    }
-    #top_part {
+    #intro {
         border:0px;
     }
-    #top_part tr td{
+    #intro tr td{
         width:100%;
         text-align:center;
     }
-    #about {
+    #intro-table {
         width:92% !important;
         height:75vh;
         padding-top:20vh !important;
         text-align:center;
         padding:0px 4%;
     }
-    #about table {
+    #intro-table table {
         width:100%;
         margin-top:6vh;
     }
-    #about table tr td {
+    #intro-table table tr td {
         text-align:center;
     }
     .btn_one {
     padding:6px 30px;
     width:60%;
     margin:4vh auto;
-    box-shadow:0px 10px 20px rgba(255, 44, 90, 0.8);
-    background:rgb(255, 44, 90);
-    color:#fff;
+    background: #1aa493;
+    color:#000;
     }
     .btn_one:hover {
-        box-shadow:0px 10px 40px rgba(255, 44, 90, 0.8);
+        box-shadow:0px 10px 40px #313131;
         cursor:pointer;
+        background-color: #313131;
+        color: #1aa493;
     }
     #contact table tr td {
         width:100%;
@@ -367,17 +382,17 @@ button:focus {
     #contact form textarea {
         width:90%;
     }
-    #work h1 {
+    #portfolio h1 {
         width:19%;
     }
-    #bio h1 {
+    #about h1 {
         width:25%;
     }
     #contact h1 {
         width:33%;
     }
     header {
-        width:96vw;
+        width:100vw;
         background:#fff;
         padding:4vh 2vw;
         position:absolute;
