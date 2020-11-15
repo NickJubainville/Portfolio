@@ -200,13 +200,15 @@ hr.divide-primary::after {
     padding:5px 0px;    
 }
 .section-title {
-    width: 10%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;    
 }
 .line {
     margin-top: -80px;
+    max-width: 175px;
+    width: 40%;
+    
 }
 .line:nth-of-type(even){
     color: #1aa493;
@@ -242,7 +244,7 @@ hr.divide-primary::after {
 }
 #about h1 {
     padding:5px 0px;
-    color: #1aa493;
+    color: #000;
 }
 #about p {
     font-family: 'Open Sans', sans-serif;
@@ -440,18 +442,9 @@ button:focus {
     #contact form textarea {
         width:90%;
     }
-    #portfolio h1 {
-        width:16%;
-    }
-    #about h1 {
-        width:12%;
-    }
     #about p {
         font-size: 16px;
         text-align: center;
-    }
-    #contact h1 {
-        width:16%;
     }
     header {
         width:100vw;
