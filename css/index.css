@@ -392,9 +392,9 @@ button:focus {
     #intro-table {
         width:92% !important;
         height:75vh;
-        padding-top:20vh !important;
+        padding:20vh 4% 0 4%;
         text-align:center;
-        padding:0px 4%;
+        margin: 10vh auto;
     }
     #intro-table table {
         width:100%;
