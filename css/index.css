@@ -175,7 +175,7 @@ hr.divide-primary::after {
     background:#1aa493;
     box-shadow:0px 10px 30px #1aa493;
 }
-.btn_one {
+#btn_one {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
     color:#000;
@@ -188,7 +188,7 @@ hr.divide-primary::after {
     margin:2vh 0px;
     transition:0.4s ease-in-out;
 }
-.btn_one:hover {
+#btn_one:hover {
     box-shadow:0px 10px 30px #313131;
     cursor:pointer;
     color:#000;
@@ -196,8 +196,10 @@ hr.divide-primary::after {
 }
 #portfolio {
     width:100vw;
-    padding:6vh 4vw;
+    padding:6vh 4vw 10vh 4vw;
     background-color: #1aa493;
+    clip-path: polygon(0px 0px,100% 0,100% 90%,0px 100%);
+    -webkit-clip-path: polygon(0px 0px,100% 0,100% 90%,0px 100%);
 }
 #portfolio h1 {
     padding:5px 0px;    
@@ -343,11 +345,11 @@ hr.divide-primary::after {
 #inner_table tr td{
     padding:10px 20px !important;
 }
-#contact form {
+#contactform {
     width:50%;
     text-align: center;
 }
-#contact form input {
+#contactform .input-text {
     width:96%;
     margin:20px 1%;
     background:transparent;
@@ -360,7 +362,7 @@ hr.divide-primary::after {
     color:#000;
     font-weight:bold;
 }
-#contact form textarea {
+#contactform textarea {
     width:96%;
     margin:20px 1%;
     padding:8px 10px;
@@ -375,11 +377,11 @@ hr.divide-primary::after {
     color:#000;
     font-weight:bold;
 }
-#contact form input:focus {
+#contactform .input-text:focus {
     outline:none;
     border-bottom:3px solid rgba(0, 0, 0, 1);
 }
-#contact form textarea:focus {
+#contactform textarea:focus {
     outline:none;
     border-bottom:3px solid rgba(0, 0, 0, 1);
 }
@@ -442,6 +444,9 @@ button:focus {
         width: 80%;
         margin: 0 auto;
     }
+    #photos-3 img {
+        width: 100%;
+    }
     hr.divide-primary {
         padding: 0;
         border: none;        
@@ -486,6 +491,10 @@ button:focus {
     .section-title {
         width: 80%;
     }
+    #portfolio {
+        clip-path: polygon(0px 0px,100% 0,100% 95%,0px 100%);
+        -webkit-clip-path: polygon(0px 0px,100% 0,100% 95%,0px 100%);
+    }
     #portfolio h1, #about h1, #contact h1 {
         width: 100% !important;
     }
@@ -503,14 +512,14 @@ button:focus {
         max-width: 150px;
         width: 40%;
     }
-    .btn_one {
+    #btn_one {
         padding:6px 30px;
         width:60%;
         margin:4vh auto;
         background: #1aa493;
         color:#000;
     }
-    .btn_one:hover {
+    #btn_one:hover {
         box-shadow:0px 10px 40px #313131;
         cursor:pointer;
         background-color: #313131;
@@ -523,10 +532,10 @@ button:focus {
     #inner_table tr td{
         padding:10px 0px !important;
     }
-    #contact form input {
+    #contactform .input-text {
         width:90%;
     }
-    #contact form textarea {
+    #contactform textarea {
         width:90%;
     }
     #about p {

@@ -145,7 +145,7 @@
         </div>
     </div>
     <div id="about">
-        <div class="section-title">
+        <div class="section-title">            
             <h1>about</h1>
             <img class="line" src="img/line.svg" height="40" width="1766">
         </div>
@@ -162,10 +162,10 @@
         <form id="contactform" action="https://formspree.io/f/mvovqyzg" method="POST">
             <input type="hidden" name="_subject" value="Website contact">
             <input type="text" name="_gotcha" style="display:none;">
-            <input name="name" type="text" placeholder="name" required>
-            <input name="_replyto" type="email" placeholder="email" required><br>
+            <input class="input-text" name="name" type="text" placeholder="name" required>
+            <input class="input-text" name="_replyto" type="email" placeholder="email" required><br>
             <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
-            <input type="submit" class="btn_one" value="Send">
+            <input type="submit" id="btn_one" value="Send">
         </form> 
     </div>
     <div id="footer">
