@@ -193,11 +193,41 @@ hr.divide-primary::after {
 #portfolio {
     width:100vw;
     padding:6vh 4vw;
-    font-weight:bold;
     background-color: #1aa493;
 }
 #portfolio h1 {
     padding:5px 0px;    
+}
+.portfolio-item {
+    margin: 2% auto 5% auto;
+}
+.portfolio-text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.portfolio-description {
+    width: 70%;
+}
+.portfolio-skills {
+    width: 25%;
+    padding-left: 40px;
+}
+.portfolio-extras {
+    width: 40%;
+}
+.portfolio-item > h3 {
+    font-size: 38px;
+    padding-bottom: 15px;
+}
+.project-link {
+    text-decoration: underline;
+    color: #000;
+    margin-bottom: 15px;
+}
+.project-link:hover {
+    font-weight: bold;
+    color: #000;
 }
 .section-title {
     text-align: center;
@@ -217,20 +247,33 @@ hr.divide-primary::after {
     margin-left: auto;
     margin-right: auto;
 }
-#photos {
+.photos {
     width:100%;
     columns:3;
     column-gap:4%;
     z-index:1;
     transition:0.4s ease-in-out;
 }
-#photos img {
+.photo-button {
+    background-color: #313131;
+    border: 1px solid #313131;
+    color: white;
+    margin-top: 20px;
+}
+.photo-button:hover {
+    background-color: transparent;
+    border: 1px solid #313131;
+}
+.photo-button:focus {
+    box-shadow: 0 0 0 .2rem #31313183;
+}
+.photos img {
     width:100%;
     height:auto;
     margin:4.5% 0px;
     transition:0.4s ease-in-out;
 }
-#photos img:hover {
+.photos img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -239,8 +282,15 @@ hr.divide-primary::after {
     padding:6vh 4vw;
     font-weight:bold;
 }
+.about-text {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    text-align: center;
+    flex-wrap: wrap;
+}
 #about p {
-    width: 50%;
+    width: 45%;
 }
 #about h1 {
     padding:5px 0px;
@@ -354,14 +404,14 @@ button:focus {
     h1 {
         font-size: 32px;
     }
-    #photos {
+    .photos {
         columns:1;
         column-gap:0%;
     }
-    #photos img {
+    .photos img {
         margin:2% 0px;
     }
-    #photos img:hover {
+    .photos img:hover {
         transform: scale(1);
         cursor: pointer;
     }
@@ -412,6 +462,16 @@ button:focus {
     #portfolio h1, #about h1, #contact h1 {
         width: 100% !important;
     }
+    .portfolio-description {
+        width: 80%;
+    }
+    .portfolio-skills {
+        width: 80%;
+        padding-left: 0;
+    }
+    .portfolio-extras {
+        width: 80%;
+    }
     .line {
         max-width: 150px;
         width: 40%;
@@ -443,8 +503,8 @@ button:focus {
         width:90%;
     }
     #about p {
-        font-size: 16px;
-        text-align: center;
+        font-size: 16px;        
+        width: 100%;
     }
     header {
         width:100vw;
