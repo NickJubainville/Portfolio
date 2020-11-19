@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -14,6 +14,9 @@ body {
 h1 {
     font-size: 42px;
     margin-bottom: 30px;
+}
+p {
+    font-size: 16px;
 }
 #loading {
     width: 100vw;
@@ -115,6 +118,7 @@ header table {
 .logo {
     width: 80%;
     margin-bottom: 20px;
+    height: auto;
 }
 hr.divide-primary {
     padding: 0;
@@ -238,6 +242,7 @@ hr.divide-primary::after {
     margin-top: -80px;
     max-width: 175px;
     width: 40%;
+    height: auto;
     
 }
 .line:nth-of-type(even){
@@ -254,11 +259,25 @@ hr.divide-primary::after {
     z-index:1;
     transition:0.4s ease-in-out;
 }
+#photos-2 {
+    column-gap: 0;
+}
+#photos-2 img:nth-of-type(1) {
+    width: 80%;
+}
+#photos-3 {
+    columns: 2;
+    column-gap: 0;
+    width: 70%;
+}
+#photos-3 img {
+    width: 75%;
+}
 .photo-button {
     background-color: #313131;
     border: 1px solid #313131;
     color: white;
-    margin-top: 20px;
+    margin: 25px 0;
 }
 .photo-button:hover {
     background-color: transparent;
@@ -414,6 +433,14 @@ button:focus {
     .photos img:hover {
         transform: scale(1);
         cursor: pointer;
+    }
+    #photos-2 img:nth-of-type(1) {
+        width: 100%;
+    }
+    #photos-1, #photos-2, #photos-3 {
+        columns: 1;
+        width: 80%;
+        margin: 0 auto;
     }
     hr.divide-primary {
         padding: 0;
