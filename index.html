@@ -159,11 +159,13 @@
             <h1>contact</h1>
             <img class="line" src="img/line.svg" height="40" width="1766">
         </div>
-        <form>
-            <input type="text" placeholder="name" required>
-            <input type="email" placeholder="email" required><br>
-            <textarea placeholder="your message" required rows="5"></textarea><br>
-            <button class="btn_one">send</button>
+        <form id="contactform" action="https://formspree.io/f/mvovqyzg" method="POST">
+            <input type="hidden" name="_subject" value="Website contact">
+            <input type="text" name="_gotcha" style="display:none;">
+            <input name="name" type="text" placeholder="name" required>
+            <input name="_replyto" type="email" placeholder="email" required><br>
+            <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+            <input type="submit" class="btn_one" value="Send">
         </form> 
     </div>
     <div id="footer">
