@@ -15,21 +15,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nick Jubainville's Portfolio</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="icon" href="img/logo.png">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
     <div id="magnify">
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
+        <div id="img_preview"></div>
     </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+    <header id="header" class="animate__animated animate__slideInDown">
         <table>
             <tr>
                 <td id="name">NJ</td>
@@ -43,7 +43,7 @@
     </header>
     <table id="intro">
         <tr>
-            <td id="intro-table" class="animated slideInLeft" style="animation-delay:2s;">
+            <td id="intro-table" class="animate__animated animate__fadeIn" style="animation-delay:0.2s;">
                 <div class="logo-container">
                     <img class="logo" src="img/logo.svg" height="500" width="500" alt="njubainville logo">                    
                     <hr class="divide-primary"/>
@@ -52,20 +52,20 @@
                 <h2>Software Developer</h2>              
                 <table>
                     <tr>
-                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://github.com/njubainville/" class="social"><i class="fab fa-github-alt"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://www.linkedin.com/in/nicolas-jubainville-53bb74182/" class="social"><i class="fab fa-linkedin-in"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="Resume/NJubainville-Resume.pdf" class="social"><i class="fas fa-briefcase"></i></a></td>                       
+                        <td class="animate__animated animate__zoomIn" style="animation-delay:0.4s;"><a href="https://github.com/njubainville/" class="social"><i class="fab fa-github-alt"></i></a></td>
+                        <td class="animate__animated animate__zoomIn" style="animation-delay:0.6s;"><a href="https://www.linkedin.com/in/nicolas-jubainville-53bb74182/" class="social"><i class="fab fa-linkedin-in"></i></a></td>
+                        <td class="animate__animated animate__zoomIn" style="animation-delay:0.8s;"><a href="Resume/NJubainville-Resume.pdf" class="social"><i class="fas fa-briefcase"></i></a></td>                       
                     </tr>
                 </table>
             </td>            
         </tr>
     </table>
     <div id="portfolio">
-        <div class="section-title">
+        <div class="wow animate__animated animate__fadeIn section-title">
             <h1>portfolio</h1>
             <img class="line" src="img/line.svg" height="40" width="1766">
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item wow animate__animated animate__fadeInDown">
             <h3>United Way Poverty Simulator</h3>
             <div class="portfolio-text">
                 <div class="portfolio-description">
@@ -96,7 +96,7 @@
                 <img onclick="magnify($(this).attr('src'))" src="img/UWAdminDashboard.webp" alt="United Way Poverty Simulator Admin Dashboard" height="1080" width="1920">
             </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item wow animate__animated animate__fadeInDown">
             <h3>Memorable Fictional Cats SEO Project</h3>
             <div class="portfolio-text">
                 <div class="portfolio-description">
@@ -124,7 +124,7 @@
                 <img onclick="magnify($(this).attr('src'))" src="img/MemorableCatsLighthouse.webp" alt="Memorable Cats Lighthouse Ratings" height="1080" width="1902">
             </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item wow animate__animated animate__fadeInDown">
             <h3>Android Egg Catch Game</h3>
             <div class="portfolio-text">
                 <div class="portfolio-description">  
@@ -154,41 +154,40 @@
         </div>
     </div>
     <div id="about">
-        <div class="section-title">            
+        <div class="wow animate__animated animate__fadeInBottomLeft section-title">            
             <h1>about</h1>
             <img class="line" src="img/line.svg" height="40" width="1766">
         </div>
-        <div class="about-text">
+        <div class="wow animate__animated animate__fadeInBottomLeft about-text">
             <p>Growing up, I always had a passion for technology; an outlier in a small town. The only opportunity available to me there to pursue this passion was through retail of electronics. During my time there, I'd like to say I learned quite a bit. Not just about the plethora of hardware, but also about people. Being that we were the only shop of our kind in the town, people with all sorts of problems came to us, regardless of whether it was something we'd dealt with previously or not. And to me, that was the best part of the job. It allowed me to step outside of the shell of a salesperson and apply some actual problem solving. Even though retail wasn't for me, I'd like to think I have that job to thank for allowing me to uncover my love of problem solving. Coupling that with my passion for technology; what better pursuit than software development?</p>
             <p>These days I'm wrapping up my diploma program at NAIT for Digital Media & IT. Even after two years and all the languages, frameworks, and approaches I've taken, I know I've just barely scratched the surface. Originally I was worried by this thought, with the feeling of inadequacy bubbling up to the surface — more commonly termed imposter syndrome. But I've since learned that I was looking at things the wrong way. What could honestly be more exciting than knowing that you still have so much more you can learn? I look forward to all the possibilities the future holds!</p>
         </div>
     </div>
     <div id="contact">
-        <div class="section-title">
+        <div class="wow animate__animated animate__pulse section-title">
             <h1>contact</h1>
             <img class="line" src="img/line.svg" height="40" width="1766">
         </div>
         <form id="contactform" action="https://formspree.io/f/mvovqyzg" method="POST">
             <input type="hidden" name="_subject" value="Website Contact">
             <input type="text" name="_gotcha" style="display:none;">
-            <input class="input-text" name="name" type="text" placeholder="name" required>
-            <input class="input-text" name="_replyto" type="email" placeholder="email" required><br>
-            <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
-            <input type="submit" id="btn_one" value="Send">
+            <input class="input-text wow animate__animated animate__flipInX" style="animation-delay:0.2s;" name="name" type="text" placeholder="name" required>
+            <input class="input-text wow animate__animated animate__flipInX" style="animation-delay:0.4s;" name="_replyto" type="email" placeholder="email" required><br>
+            <textarea class="wow animate__animated animate__flipInX" style="animation-delay:0.6s;" name="message" placeholder="your message" required rows="5"></textarea><br>
+            <input class="wow animate__animated animate__fadeIn" style="animation-delay:0.6s;" type="submit" id="btn_one" value="Send">
         </form> 
     </div>
     <div id="footer">
         <table class="footer-links">
             <tr>
-                <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://github.com/njubainville/" class="social"><i class="fab fa-github-alt"></i></a></td>
-                <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://www.linkedin.com/in/nicolas-jubainville-53bb74182/" class="social"><i class="fab fa-linkedin-in"></i></a></td>
-                <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="Resume/NJubainville-Resume.pdf" class="social"><i class="fas fa-briefcase"></i></a></td>                       
+                <td class="wow animate__animated animate__zoomIn" style="animation-delay:0.2s;"><a href="https://github.com/njubainville/" class="social"><i class="fab fa-github-alt"></i></a></td>
+                <td class="wow animate__animated animate__zoomIn" style="animation-delay:0.4s;"><a href="https://www.linkedin.com/in/nicolas-jubainville-53bb74182/" class="social"><i class="fab fa-linkedin-in"></i></a></td>
+                <td class="wow animate__animated animate__zoomIn" style="animation-delay:0.6s;"><a href="Resume/NJubainville-Resume.pdf" class="social"><i class="fas fa-briefcase"></i></a></td>            
             </tr>
         </table>
         <p>Copyright &copy; Nick Jubainville 2020</p>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/index.js" type="text/javascript"></script>
 </body>
+<script src="js/index.js" type="text/javascript"></script>
+<script> new WOW().init(); </script>
 </html>

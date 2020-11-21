@@ -26,30 +26,22 @@ if ((width >= 1000)){
 }
 
 function magnify(imglink){
-    $("#img_here").css("background",`url('${imglink}') center center`);
+    $("#img_preview").css("background",`url('${imglink}') center center`);
     $("#magnify").css("display","flex");
-    $("#magnify").addClass("animated fadeIn");
+    $("#magnify").addClass("animate__animated animate__fadeIn");
     setTimeout(function(){
-        $("#magnify").removeClass("animated fadeIn");
+        $("#magnify").removeClass("animate__animated animate__fadeIn");
     },800);
 }
 
 function closemagnify(){
-    $("#magnify").addClass("animated fadeOut");
+    $("#magnify").addClass("animate__animated animate__fadeOut");
     setTimeout(function(){
         $("#magnify").css("display","none");
-        $("#magnify").removeClass("animated fadeOut");
-        $("#img_here").css("background",`url('') center center`);
+        $("#magnify").removeClass("animate__animated animate__fadeOut");
+        $("#img_preview").css("background",`url('') center center`);
     },800);
 }
-
-setTimeout(function(){
-    $("#loading").addClass("animated fadeOut");
-    setTimeout(function(){
-      $("#loading").removeClass("animated fadeOut");
-      $("#loading").css("display","none");
-    },800);
-},1650);
 
 $(document).ready(function(){
     $("a").on('click', function(event) {
