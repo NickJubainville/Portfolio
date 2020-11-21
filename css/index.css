@@ -336,8 +336,10 @@ hr.divide-primary::after {
 }
 #contact {
     width:100vw;
-    padding:6vh 4vw;
+    padding:15vh 4vw;
     background-color: #1aa493;
+    clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+    -webkit-clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
 }
 #contact h1 {
     padding:5px 0px;
