@@ -55,4 +55,7 @@ $(document).ready(function(){
        });
        } 
       });
+
+    date = new Date();
+    document.getElementById("year_date").innerHTML = "2020-"+date.getFullYear();
   });
